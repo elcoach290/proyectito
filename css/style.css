@@ -1,8 +1,21 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
+	line-height: 1.4;
 }
 
+
+img{
+	max-width: 100%;
+}
 
 
 table{
@@ -60,6 +73,8 @@ th{
 .header{
 	border-bottom: solid 1px black;
 	background-color: #d7d7d7;
+	position: sticky;
+	top: 0;
 }
 
 	.header__title{
@@ -67,9 +82,11 @@ th{
 	}
 
 	.header__content{
-		width: 1170px;
+		max-width: 1170px;
 		margin-left: auto;
 		margin-right: auto;
+		padding-left: 15px;
+		padding-right: 15px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -111,6 +128,50 @@ th{
 		display: block;
 	}
 
+
+.hero{
+	padding-top: 100px;
+	background-color: #000;
+	color: white;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("../images/sento.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom right;
+	scroll-margin-top: 142.267px;
+}
+
+	.hero__content{
+		max-width: 1170px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		display: flex;
+	}
+
+	.hero__text{
+		max-width: 600px;
+		padding: 30px;	
+	}
+
+	.hero__title{
+
+	}
+
+	.hero__img{
+		display: block;
+	}
+
+	.hero__btn{
+		display: inline-block;
+		padding: 10px 30px;
+		background-color: tomato;
+		color: white;
+		border-radius: 8px;
+		text-decoration: none;
+	}
+
+
 .rrss{
 	padding: 0;
 	list-style: none;
@@ -132,6 +193,19 @@ th{
 }
 
 
+.productito{
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+}	
+	.productito__text{
+		width: 66.66%;
+	}
+
+	.productito__media{
+		width: 33.33%;
+	}
 
 
 .section{

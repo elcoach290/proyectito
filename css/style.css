@@ -38,15 +38,23 @@ th{
 	background-color: green;
 }
 
+
 .saludo{
 	background-color: orange;
 }
+
 
 .piscos-destacados{
 	background-color: pink;
 	padding: 10px;
 	margin: 0;
 }
+
+/* ==================== *\
+	   O F E R T A
+\* ==================== */
+
+
 
 .oferta{
 	background-color: #000;
@@ -68,6 +76,10 @@ th{
 	.oferta__link:hover{
 		color: #f00;
 	}
+
+/* ==================== *\
+	    H E A D E R 
+\* ==================== */
 
 
 .header{
@@ -92,6 +104,41 @@ th{
 		justify-content: space-between;
 	}
 
+	.header__navigation{
+		display: flex;
+		align-items: center;
+	}
+
+	.header__form{
+		display: flex;
+		background-color: #fff;
+		border-radius: 15px;
+	}
+
+	.header__label{
+		display: none;
+	}
+
+	.header__field{
+		border: none;
+		background-color: transparent;
+		padding: 5px 10px;
+		outline: none;
+	}
+
+	.header__button{
+		padding: 4px 10px;
+		border: none;
+		background-color: transparent;
+		outline: none;
+		cursor: pointer;
+	}
+
+/* ==================== *\
+	     M E N U
+\* ==================== */
+
+
 
 .menu{
 	padding: 0;
@@ -102,10 +149,6 @@ th{
 
 	.menu__link{
 		display: block;
-		/*padding-top: 5px;
-		padding-bottom: 5px;
-		padding-left: 10px;
-		padding-right: 10px;*/
 		padding: 5px 10px;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -129,6 +172,11 @@ th{
 	}
 
 
+/* ==================== *\
+	     H E R O
+\* ==================== */
+
+
 .hero{
 	padding-top: 100px;
 	background-color: #000;
@@ -150,8 +198,12 @@ th{
 	}
 
 	.hero__text{
-		max-width: 600px;
+		width: 50%; /*  ¿¿¿ que porcentaje es 600px de 1170px ???  600/1170 */
 		padding: 30px;	
+	}
+
+	.hero__media{
+		width: 50%;
 	}
 
 	.hero__title{
@@ -160,6 +212,7 @@ th{
 
 	.hero__img{
 		display: block;
+		width: 100%;	
 	}
 
 	.hero__btn{
@@ -170,6 +223,26 @@ th{
 		border-radius: 8px;
 		text-decoration: none;
 	}
+
+	.hero__options{
+		margin-top: 30px;
+		display: flex;
+		gap: 15px;
+	}
+
+	.hero__share{
+		background-color: #6666FF;
+		color: white;
+		padding: 5px 10px;
+		border-radius: 8px;
+		text-decoration: none;
+		display: inline-block;
+	}
+
+/* ==================== *\
+	     R R S S
+\* ==================== */
+
 
 
 .rrss{
@@ -185,12 +258,24 @@ th{
 	}
 
 
+/* ==================== *\
+	   F O O T E R
+\* ==================== */
+
+
+
 .footer{
 	background-color: black;
 	color: white;
 	padding: 30px;
 	text-align: center;
 }
+
+
+/* ==================== *\
+    P R O D U C T I T O
+\* ==================== */
+
 
 
 .productito{
@@ -206,6 +291,13 @@ th{
 	.productito__media{
 		width: 33.33%;
 	}
+
+
+/* ==================== *\
+	   S E C T I O N
+\* ==================== */
+
+
 
 
 .section{

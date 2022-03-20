@@ -304,10 +304,11 @@ th{
 	background-color: #eeeeee;
 	padding-top: 60px;
 	padding-bottom: 60px;
+	scroll-margin-top: 142.267px;
 }
 
 	.section__container{
-		width: 1170px;
+		max-width: 1170px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -316,4 +317,66 @@ th{
 		text-align: center;
 		text-transform: uppercase;
 	}
+
+
+
+/* =========================== *\
+	 C O N T A C T  F O R M
+\* =========================== */
+
+
+.contactform{
+	max-width: 609px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contactform__label{
+	display: none;
+}
+
+.contactform__field{
+	display: block;	
+	width: 100%;
+	margin-bottom: 52px;
+	padding: 13px;
+	border: solid 0 transparent;
+	border-left: solid 5px #000;
+	border-bottom: solid 5px #000;
+	background-color: transparent;
+	outline: none;
+	transition: border 300ms;
+}
+	
+	.contactform__field:focus{
+		border-top: solid 5px #000;
+		border-right: solid 5px #000;
+	}
+
+	.contactform__field--message{
+		height: 184px;
+	}
+
+.contactform__btn{
+	background-color: transparent;
+	border: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-left: solid 3px #000;
+	border-right: solid 3px #000;
+	padding: 13px 50px;
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	transition: border 300ms;
+	outline: none;
+}
+
+.contactform__btn:hover,
+.contactform__btn:focus{
+	border:solid 5px #000;
+}
+
+
 

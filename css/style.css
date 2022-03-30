@@ -109,9 +109,26 @@ th{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		position: relative;
 	}
 
-	@media screen and (min-width: 1024px){
+	.header__burger{
+		width: 30px;
+		height: 20px;
+		background-color: transparent;
+		border: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		cursor: pointer;
+	}
+
+		.header__burger span{
+			height: 3px;
+			background-color: #000;
+		}
+
+	@media screen and (min-width: 768px){
 
 		.header__burger{
 			display: none;
@@ -124,12 +141,24 @@ th{
 	.header__navigation{
 		display: none;
 		align-items: center;
+		position: absolute;
+		right: 0;
+		top: 100%;
+		padding: 15px;
+		background-color: #d7d7d7;
+		border-radius: 0 0 0 15px;
 	}
 
-	@media screen and (min-width: 1024px){
+		.header__navigation--visible{
+			display: block;
+		}
+
+	@media screen and (min-width: 768px){
 
 		.header__navigation{
-			display: flex
+			display: flex;
+			position: static;
+			padding: 0;
 		}
 
 	}
@@ -169,8 +198,13 @@ th{
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	display: flex;
 }
+
+	@media screen and (min-width: 768px){
+		.menu{
+			display: flex;
+		}
+	}
 
 	.menu__link{
 		display: block;

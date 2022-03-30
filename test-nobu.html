@@ -4,12 +4,24 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Test Nobu For IOS</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link
+  rel="stylesheet"
+  href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+/>
+	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
 	<style>
-		nav{
-			padding: 10px;
-			overflow: auto;
-			position: sticky;
+		*{
+			box-sizing: border-box;
+		}
+
+
+		nav.fixed{
+			position: fixed;
 			top: 0;
+			left: 0;
+			right: 0;
 		}
 		nav ul{
 			display: flex;
@@ -19,13 +31,15 @@
 			gap: 5px;
 		}
 
+
 		nav li{
 			max-width: 50%;
 			min-width: 150px;
 		}
 
-		nav a{
+		nav button{
 			display: block;
+			width: 100%;
 			padding: 10px;
 			text-decoration: none;
 			background-color: #000;
@@ -52,14 +66,16 @@
 		<p>Culpa ipsam eaque impedit qui quae, explicabo incidunt, enim, mollitia quibusdam provident, itaque earum eveniet vero sunt aspernatur ipsa. Temporibus, neque! Debitis veniam sequi, at corrupti ratione deserunt commodi saepe.</p>
 	</section>
 	<nav>
-		<ul>
-			<li><a href="#">Enlace 1</a></li>
-			<li><a href="#">Enlace 2</a></li>
-			<li><a href="#">Enlace 3</a></li>
-			<li><a href="#">Enlace 4</a></li>
-			<li><a href="#">Enlace 5</a></li>
-			<li><a href="#">Enlace 6</a></li>
-		</ul>
+		<div class="container" data-simplebar>
+			<ul>
+				<li><button>Enlace 1</button></li>
+				<li><button>Enlace 2</button></li>
+				<li><button>Enlace 3</button></li>
+				<li><button>Enlace 4</button></li>
+				<li><button>Enlace 5</button></li>
+				<li><button>Enlace 6</button></li>
+			</ul>
+		</div>
 	</nav>
 	<section>
 		<h1>Seccion 1</h1>
@@ -113,5 +129,25 @@
 		<p>Eius fugit ipsa, aspernatur ut necessitatibus in? Maxime blanditiis quibusdam iusto earum quaerat cupiditate doloribus harum et quisquam temporibus, exercitationem possimus voluptas dolorum dicta deleniti laudantium labore natus obcaecati inventore!</p>
 		<p>Culpa ipsam eaque impedit qui quae, explicabo incidunt, enim, mollitia quibusdam provident, itaque earum eveniet vero sunt aspernatur ipsa. Temporibus, neque! Debitis veniam sequi, at corrupti ratione deserunt commodi saepe.</p>
 	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		
+		$(document).ready(function(){
+		var $window=$(window);
+		var $late=$("nav");
+
+		$window.scroll(function(){
+
+			if (!$late.hasClass("fixed") && ($window.scrollTop() > $late.offset().top)){
+				$late.addClass("fixed").data("top", $late.offset().top);
+			}
+			else if ($late.hasClass("fixed") && ($window.scrollTop() < $late.data("top"))) {
+                $late.removeClass("fixed");
+     		}
+		});
+
+		})
+		
+	</script>
 </body>
 </html>

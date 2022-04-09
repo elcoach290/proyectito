@@ -9,13 +9,15 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="slick/slick.css">
+		<link rel="stylesheet" href="slick/slick-theme.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="header">
 			<div class="oferta oferta--especial">
 				<a href="#" class="oferta__link" data-color="#00f">Ofertas del 50% por Semana Santa</a>
-			</div>
+			</div>	
 			<div class="header__content">
 				<h1 class="header__title">
 					<a href="index.html">
@@ -44,12 +46,50 @@
 		</header>
 
 		<main>
+			<div class="carrusel" id="main-carrusel">
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Sujey</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ipsum. Ratione aperiam obcaecati ducimus, dolore?</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Gabriela</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum totam quibusdam omnis mollitia illo, modi.</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Melany</h2>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis saepe fuga pariatur placeat dolores deleniti.</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Alejandro</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Odit necessitatibus hic magni consequuntur dolorem, exercitationem?</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Christian</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione qui voluptatem, maxime perferendis nemo maiores!</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+			</div>
+
 			<section class="hero" id="inicio">	
 				<div class="hero__content">
 					<div class="hero__text">
 						<h2 class="hero__title">Intro</h2>
 						<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quaerat aliquam reiciendis eligendi molestiae, facilis voluptate ad, odit nesciunt deleniti consequatur quibusdam sunt praesentium. At facilis, magni dolorum? Laborum, quis, sunt.</p>
-						<a href="#" class="hero__btn">Call to Action</a>
+						<button class="hero__btn" id="botonDatos">Solicitar Datos</button>
 
 						<div class="hero__options">
 							<button class="hero__favorite">Añadir a Favorito</button>
@@ -61,6 +101,44 @@
 					</div>
 				</div>
 			</section>
+
+			<div class="carrusel" id="secondary-carrusel">
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Sujey</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ipsum. Ratione aperiam obcaecati ducimus, dolore?</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Gabriela</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum totam quibusdam omnis mollitia illo, modi.</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Melany</h2>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis saepe fuga pariatur placeat dolores deleniti.</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Alejandro</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Odit necessitatibus hic magni consequuntur dolorem, exercitationem?</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Christian</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione qui voluptatem, maxime perferendis nemo maiores!</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+			</div>
 
 			<section class="hero" id="nosotros">	
 				<div class="hero__content">
@@ -74,6 +152,44 @@
 					</div>
 				</div>
 			</section>
+
+			<div class="carrusel" id="team-carrusel">
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Sujey</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ipsum. Ratione aperiam obcaecati ducimus, dolore?</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Gabriela</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum totam quibusdam omnis mollitia illo, modi.</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Melany</h2>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis saepe fuga pariatur placeat dolores deleniti.</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Alejandro</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Odit necessitatibus hic magni consequuntur dolorem, exercitationem?</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+				<div class="carrusel__slide">
+					<div class="carrusel__content">
+						<h2>Christian</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione qui voluptatem, maxime perferendis nemo maiores!</p>
+						<a href="#" class="carrusel__btn">Saber +</a>
+					</div>
+				</div>
+			</div>
 
 			<section class="hero" id="galeria">	
 				<div class="hero__content">
@@ -136,7 +252,10 @@
 			</div>
 			<button class="modal__btn">Cerrar</button>
 		</div>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="slick/slick.min.js"></script>
 		<script src="js/app.js"></script>
-		<script src="js/variables.js"></script>
+		<!--<script src="js/variables.js"></script>-->
+		<script src="js/funciones.js"></script>
 	</body>
 </html>

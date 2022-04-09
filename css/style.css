@@ -94,6 +94,7 @@ th{
 	background-color: #d7d7d7;
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
 
 	.header__title{
@@ -472,5 +473,52 @@ th{
 		margin-bottom: 30px;
 	}
 
+/* =========================== *\
+	     C A R R U S E L 
+\* =========================== */
 
+.carrusel{
+	text-align: center;
+}
+
+	.carrusel__slide{
+		background-color: #f1f1f1;
+	}
+
+	.carrusel__content{
+		max-width: 1170px;
+		padding-left: 45px;
+		padding-right: 45px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.carrusel__btn{
+		padding: 10px 30px;
+		display: inline-block;
+		background-color: tomato;
+		color: white;
+		border-radius: 8px;
+		text-decoration: none;
+	}
+
+	.carrusel .slick-dots li button::before{
+		color: tomato;
+		font-size: 12px;
+	}
+
+	.carrusel .slick-prev::before, .carrusel .slick-next::before{
+		color: tomato;
+	}
+
+	.carrusel .slick-prev{
+		left: 25px;
+		z-index: 1;
+	}
+
+	.carrusel .slick-next{
+		right: 25px;
+	}
 
